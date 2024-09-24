@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-combatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Venda seu imóvel </title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+        <!-- Anúncio -->
+            <h3> Cadastre seu imóvel para vender mais rápido! </h3>
+        </div>
+    
+
+    <!-- Formulário -->
+    <div class="form-container">
+        <div class="form-header">
+            <p> Formulário </p>
+        </div>
+
+    <!-- Descrição -->    
+        <div class="form-body">
+            <h1 class="form-title"> Venda fácil seu imóvel! </h1>
+            <p> Descreva as caracteristicas e as opcionais que ele possuí. </p>
+
+    <form>   
+        <div class="box-input">
+            <label for="title"> Título do anúncio <span class="required-field"> * </span>  </label>
+            <input 
+                type="text"
+                name="title"
+                id="title" 
+                class="block"
+                placeholder="Um titulo para anunciar seu imóvel."
+                minlength="1"
+                maxlength="30"
+                required >
+        </div> 
+
+        <div class="box-input">
+            <label for="price"> Preço <span class="required-field"> * </span> </label>
+            <input 
+                type="number"
+                name="price"
+                id="price" 
+                class="block"
+                placeholder="Defina o preço"
+                required >
+        </div> 
+
+        <div class="box-input">
+            <label for="description"> Descrição <span class="required-field"> * </span>  </label>
+            <textarea
+            name="description" 
+            id="description"
+            class="block"
+            placeholder="Coloque os detalhes do seu imóvel." > </textarea>
+        </div> 
+
+        <div class="box-input">
+            <label for="size"> Tamanho do terreno <span class="required-field"> * </span>  </label>
+            <input 
+                type="text"
+                name="size"
+                id="size" 
+                class="block"
+                placeholder="Qual o tamanho de área do terreno?"
+                required >
+        </div> 
+
+        <div class="box-input">
+            <label for="adress"> CEP <span class="required-field"> * </span>  </label>
+            <input 
+                type="number"
+                name="adress"
+                id="adress" 
+                class="block"
+                placeholder="Digite o CEP em que está localizado seu imóvel"
+                required >
+        </div> 
+
+        <div class="box-input">
+            <p> Tipo de imóvel: <span class="required-field"> * </span></p>
+            <input type="radio" id="apartamento" name="immobile">
+            <label for="Apartamento"> Apartamento</label>
+
+            <input type="radio" id="casa" name="immobile">
+            <label for="casa"> Casa </label>
+
+            <input type="radio" id="outro" name="immobile">
+            <label for="outro"> Outro </label>
+
+        </div> 
+
+        <div class="box-input">
+            <p> Opcionais </p>
+            <ul class="optional-list"> 
+                <li>
+                    <input 
+                        type="checkbox" 
+                        id="garage"
+                        name="optional[]"
+                        value="garage" >
+                    <label for="garage"> Garagem </label>
+
+                </li>
+            </ul>
+
+            <ul class="optional-list"> 
+                <li>
+                    <input 
+                        type="checkbox" 
+                        id="furnished"
+                        name="optional[]"
+                        value="furnished" >
+                    <label for="furnished"> Mobiliada </label>
+
+                </li>
+            </ul>
+
+            <ul class="optional-list"> 
+                <li>
+                    <input 
+                        type="checkbox" 
+                        id="recreation_area"
+                        name="optional[]"
+                        value="recreation_area" >
+                    <label for="recreation_area"> Área de lazer </label>
+
+                </li>
+            </ul>
+        </div>
+
+        <div class="box-input">
+            <p> Fotos do imóvel <span class="required-field"> *</span>  </p>
+            <input 
+                type="file"
+                multiple accept="image/png, imagem/jpg" 
+                id="images" 
+                name="images" 
+                required> 
+
+        </div>
+
+    
+        <input type="submit" value="Enviar" class="btn-submit">
+    </form>       
+
+        </div>
+
+
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
+</body>
+</html>
